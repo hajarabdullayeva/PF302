@@ -1,0 +1,108 @@
+/*! Header section start */
+body {
+  background-color: plum;
+  padding: 20px 50px;
+}
+
+header {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-bottom: 1px solid gray;
+}
+
+.header-top__left ul,
+.header-top__rigth ul,
+.header-bottom ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.apply-btn {
+  padding: 10px;
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*! Header section end */
+
+#education-section {
+  padding-top: 20px;
+}
+
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.block {
+  padding: 20px;
+  width: 24.55%;
+  background-color: aliceblue;
+  border-radius: 10px;
+  transition: 1s;
+}
+.block:hover {
+  background-color: rgb(189, 189, 189);
+}
+
+.block:hover .svg {
+  background-color: yellow;
+}
+
+.block:hover img {
+  transform: scale(1.5);
+}
+
+.block-top {
+  display: flex;
+  justify-content: space-between;
+}
+.svg {
+  height: 20px;
+  background-color: rgb(224, 224, 224);
+  border-radius: 50%;
+  transition: 1s;
+}
+img {
+  transition: 1s;
+  width: 100%;
+}
+
+.center {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  /* position: relative; */
+}
+
+.rentangle {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
