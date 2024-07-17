@@ -1,0 +1,148 @@
+.container {
+  display: grid;
+  grid-template-columns: 300px 200px 150px 500px 100px;
+  grid-template-rows: 300px 200px 150px;
+
+  gap: 10px;
+  /* column-gap: ; */
+}
+
+.block {
+  background: blue;
+}
+
+.block:first-child {
+  background-color: plum;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.block:nth-child(2) {
+  background-color: orange;
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+
+  grid-column: 1/4;
+}
+
+.block:last-child {
+  background-color: green;
+  /* grid-row-start: 1;
+  grid-row-end: 4; */
+
+  grid-row: 1/4;
+  /* grid-column-start: 4;
+  grid-column-end: 5; */
+
+  grid-column: 4/5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 200px 400px 200px;
+  margin: 20px;
+  gap: 10px;
+}
+
+.header-item {
+  background-color: red;
+  grid-column: 1/4;
+}
+
+.nav-item {
+  background-color: yellow;
+}
+
+.main-item {
+  background-color: orange;
+}
+
+.ads-item {
+  background-color: cadetblue;
+}
+
+.footer-item {
+  background: hotpink;
+  grid-column: 1/4;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "box1 box2 box3"
+    "box1 box2 ."
+    "box1  . .";
+
+    grid-template-rows: 300px 300px 300px;
+}
+
+.box-1 {
+  background-color: red;
+  grid-area: box1;
+}
+
+.box-2 {
+  background-color: yellow;
+  grid-area: box2;
+}
+
+.box-3 {
+  background-color: cadetblue;
+  grid-area: box3;
+} */
+
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav main ads"
+    "footer footer footer"
+    ;
+
+    grid-template-rows: 100px 400px 100px;
+}
+
+.header-item {
+  background-color: red;
+  grid-area: header;
+}
+
+.nav-item {
+  background-color: yellow;
+  grid-area: nav;
+}
+
+.main-item {
+  background-color: orange;
+  grid-area: main;
+}
+
+.ads-item {
+  background-color: cadetblue;
+  grid-area: ads;
+}
+
+.footer-item {
+  background: hotpink;
+  grid-area: footer;
+}
+
+
+.gallery{
+    display: grid;
+    /* grid-template-columns: 300px 300px 300px; */
+    /* grid-template-columns: repeat(3, 1fr); */
+
+    grid-template-columns: repeat(auto-fill, minmax(400px,  1fr));
+}
+
+.gallery img{
+    width: 100%;
+}
