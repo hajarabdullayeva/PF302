@@ -1,0 +1,132 @@
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*! Header section start */
+
+header {
+  background-color: #2d3e50;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+
+  svg {
+    width: 24px;
+  }
+
+  nav {
+    display: none;
+  }
+}
+/*! Header section end */
+
+/*! Main section start */
+/*# Profile section start */
+
+#profile {
+  background-color: #1bbc9b;
+}
+.profile {
+  text-align: center;
+  padding: 6rem 0.5rem;
+
+  img {
+    width: 15rem;
+  }
+
+  h1 {
+    margin: 1.25rem 0 1.5rem;
+  }
+}
+/*# Profile section end */
+
+/*# Portfolio section start */
+.portfolio {
+  padding: 6rem 2rem;
+  text-align: center;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .cards {
+    margin: 1.25rem 0 1.5rem;
+  }
+}
+/*# Portfolio section end */
+/*! Main section end */
+
+@media (min-width: 768px) {
+  .portfolio {
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .card {
+      width: 48%;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .header {
+    .hamburger-menu {
+      display: none;
+    }
+
+    nav {
+      display: block;
+    }
+
+    ul {
+      display: flex;
+      gap: 10px;
+    }
+
+    a {
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    width: 31% !important;
+  }
+}

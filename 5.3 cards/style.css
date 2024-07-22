@@ -1,0 +1,66 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  nav {
+    display: none;
+  }
+}
+
+.cards {
+  padding: 2em 1em 3em 1em;
+}
+
+.card {
+  width: 100%;
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .card {
+    width: 32%;
+  }
+
+  header {
+    nav {
+      display: block;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  li {
+    list-style: none;
+  }
+}

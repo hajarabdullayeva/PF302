@@ -1,0 +1,57 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 24%;
+  height: 200px;
+  background-color: green;
+}
+
+@media (max-width: 576px) {
+  .box {
+    width: 100%;
+    background-color: crimson;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .box {
+    background-color: gold;
+    width: 49%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .box {
+    background-color: cadetblue;
+    width: 49%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .box {
+    background-color: orange;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .box {
+    background-color: pink;
+  }
+}
+
+/* @media (min-width: 1400px) {
+
+} */
+
+/*! 0-768px */
+
+/* @media (max-width: 768px) {
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+} */
