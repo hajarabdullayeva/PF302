@@ -1,0 +1,7 @@
+.btn-primary {
+  @include buttonMixin(peru, white);
+}
+
+.btn-secondary {
+  @include buttonMixin(white, peru);
+}

@@ -1,0 +1,7 @@
+@function triple-size($size) {
+  @return $size * 3;
+}
+
+@function doubleH1($val) {
+  @return $val * $scale;
+}
