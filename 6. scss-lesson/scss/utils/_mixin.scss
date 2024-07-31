@@ -1,0 +1,57 @@
+@mixin flexBox($gapSize: 10px, $fontSize, $justifyContent: center) {
+  display: flex;
+  align-items: center;
+  justify-content: $justifyContent;
+  gap: $gapSize;
+  font-size: $fontSize;
+  background-color: $cc;
+}
+
+@mixin shape($isCircle: false) {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+
+  @if ($isCircle) {
+    border-radius: 50%;
+  }
+}
+
+// @mixin xs {
+//   @media (max-width: map-get($media, "sm")) {
+//     @content;
+//   }
+// }
+
+// @mixin sm {
+//   @media (min-width: map-get($media, "sm")) {
+//     @content;
+//   }
+// }
+
+// @mixin customMeida($br) {
+//   @media (max-width: $br) {
+//     @content;
+//   }
+// }
+
+@mixin breakpoints($args...) {
+  @if (length($args) ==1) {
+    @media (min-width: nth($args, 1)) {
+      @content;
+    }
+  }
+
+  @if (length($args) ==2) {
+    @media (min-width: nth($args, 1)) and (max-width: nth($args, 2)) {
+      @content;
+    }
+  }
+}
+
+@mixin buttonMixin($bgColor, $textColor) {
+  padding: 10px 20px;
+  border: none;
+  background-color: $bgColor;
+  color: $textColor;
+}

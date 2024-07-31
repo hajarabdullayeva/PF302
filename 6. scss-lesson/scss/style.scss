@@ -1,0 +1,96 @@
+@import "utils/functions";
+@import "utils/variable";
+// @import "./functions";
+@import "./utils/mixin";
+@import "./base/reset";
+@import "./components/buttons";
+
+@import "./pages/home";
+
+.wrapper {
+  @include flexBox(10px, space-between);
+}
+
+.wrapper-2 {
+  @include flexBox($gapSize, 40px);
+}
+
+// .box {
+//   width: 200px;
+//   height: 200px;
+//   background-color: red;
+// }
+
+// .box {
+//   @include shape(true);
+// }
+
+// $media: (
+//   "sm": 576px,
+//   "md": 768px,
+//   "lg": 992px,
+//   "xl": 1200px,
+// );
+
+// @include xs {
+//   p {
+//     color: blue;
+//   }
+// }
+
+// @include sm {
+//   p {
+//     color: hotpink;
+//   }
+// }
+
+// @include customMeida(1100px) {
+//   p {
+//     background: yellow;
+//   }
+// }
+
+@include breakpoints(300px, 800px) {
+  p {
+    background-color: cadetblue;
+  }
+}
+
+// $sizes: 40px, 50px, 60px;
+
+// $moods: (red, black);
+
+// @each $mood in $moods {
+//   .theme-#{$mood} {
+//     // background-color: $mood;
+//     color: $mood;
+//   }
+// }
+
+// @each $size in $sizes {
+//   .box-#{$size} {
+//     width: $size;
+//     height: $size;
+//     background-color: black;
+//   }
+// }
+
+.container {
+  height: 200px;
+  background-color: palegreen;
+  width: calc(100% - 300px);
+}
+
+@font-face {
+  font-family: MulishLight;
+  src: url("../fonts/Mulish/static/Mulish-Light.ttf");
+}
+
+@font-face {
+  font-family: MulishLightItalic;
+  src: url("../fonts/Mulish/static/Mulish-LightItalic.ttf");
+}
+
+p {
+  font-family: MulishLightItalic;
+}
