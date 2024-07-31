@@ -94,3 +94,12 @@
 p {
   font-family: MulishLightItalic;
 }
+
+%errorBtn {
+  color: red;
+  background-color: yellow;
+}
+
+p {
+  @extend %errorBtn;
+}
